@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceFlix</title>
+
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p><a href="/index.html">IceFlix</a></p>
+        </div>
+        <div class="toggle"></div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Genre</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!--------Log in ------->
+        <div class="login-container">
+            <p class="login">Log In</p>
+            <form action="">
+                <input type="email" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+                <button><a href="#">Log In</a></button>
+            </form>
+            <div class="forgot-link">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="create-link">
+                <p>Don't have account? <a href="#" id="signUp">Sign up</a> </p>
+            </div>
+        </div>
+        
+        <!--------Sign up------->
+        <div class="signup-container active-signup">
+            <p class="signup">Sign up</p>
+            <form action="">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+                <button><a href="#">Create account</a></button>
+            </form>
+            <div class="accountready">
+                <p>Already have account? <a href="#" id="login">Log in</a> </p>
+            </div>
+        </div>
+    </header>
+
+    <script src="account.js"></script>
+</body>
+</html>

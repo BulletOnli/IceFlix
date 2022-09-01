@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Open+Sans:wght@400;500;600;700;800&family=Shrikhand&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #4D4E6C;
+}
+
+/* ------------------Nav----------------- */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #2D3147;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.logo p {
+    color: #F3F3F3;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 4rem;
+    padding: 3px 0;
+}
+
+.logo p a {
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+nav input {
+    background-color: #F3F3F3;
+    margin-left: 18rem;
+    width: 25rem;
+    height: 2rem;
+    padding: 0 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+nav input::placeholder {
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.nav-links li {
+    margin: 0 3rem;
+}
+
+.nav-links li a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+.nav-links li button {
+    padding: 2px 15px;
+    color: #F3F3F3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: #2D3147;
+    border: 2px solid #F3F3F3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.nav-links li button:hover,
+.nav-links li button a:hover{
+    background-color: #F3F3F3;
+    color: #0f1c32;
+}
+
+
+/* ------------------Header----------------- */
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: #4D4E6C;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.left-section,
+.right-section {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-section {
+    margin-bottom: 5rem;
+    margin-left: 7rem;
+    width: 30rem;
+}
+
+.text-section button {
+    font-size: 15px;
+    color: #F3F3F3;
+    font-weight: 700;
+    border: 2px solid #F3F3F3;
+    background-color: transparent;
+    padding: 0.5rem 2.5rem;
+    cursor: pointer;
+}
+
+.text-section button:hover {
+    background-color: #0f1c32;
+    transition: 0.2s ease-in-out
+}
+
+.title {
+    font-size: 7rem;
+    font-weight: 800;
+    color: #F3F3F3;
+    margin-bottom: -10px;
+}
+
+.text-section span {
+    color: #0f1c32;
+    font-weight: 800;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #F3F3F3;
+    margin-bottom: 15px;
+}
+
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section p {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #F3F3F3;
+    margin-bottom: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: 'Silkscreen', cursive;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur;
+}
+
+.showing {
+    width: 22rem;
+    height: 27rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 4px solid black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6)
+}
+
+.showing-image {
+    width: 19rem;
+    height: 24rem;
+    background-image: url("images/Thor.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+    border-radius: 30px;
+    animation: change 30s infinite ease-in-out;
+}
+
+@keyframes change {
+    20% {
+        background-image: url("images/shanks-poster.jpg");
+    }
+    40% {
+        background-image: url("images/drstrange.jpg");
+    }
+    60% {
+        background-image: url("images/jujutsu.jpg");
+    }
+    80% {
+        background-image: url("images/dragonball.jpg");
+    }
+    100% {
+        background-image: url("images/DemonSlayer.jpg");
+    }
+}
+
+
+main {
+    width: 100%;
+    height: 100vh;
+}
