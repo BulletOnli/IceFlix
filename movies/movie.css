@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Open+Sans:wght@400;500;600;700;800&family=Shrikhand&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #4D4E6C;
+}
+
+/* ------------------Nav----------------- */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #2D3147;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.logo p {
+    color: #F3F3F3;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 4rem;
+    padding: 5px 0;
+}
+
+.logo p a {
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+nav input {
+    background-color: #F3F3F3;
+    width: 25rem;
+    height: 2rem;
+    padding: 0 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 17rem;
+}
+
+nav input::placeholder {
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.nav-links li {
+    margin: 0 3rem;
+}
+
+.nav-links li a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+.nav-links li button {
+    padding: 2px 15px;
+    color: #F3F3F3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: #2D3147;
+    border: 2px solid #F3F3F3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.nav-links li button:hover,
+.nav-links li button a:hover{
+    background-color: #F3F3F3;
+    color: #0f1c32;
+}
+
+
+/* ------------------Main----------------- */
+
+main {
+    width: 100%;
+    height: 150vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+main p {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #F3F3F3;
+    padding-left: 5rem;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+
+.video-section {
+    display: flex;
+    align-items: center;
+
+}
+
+.swiper {
+    width: 72rem;
+    height: 15rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 20px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    user-select: none;
+}
+
+.swiper-slide a {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.prev-button,
+.prev-button-two,
+.prev-button-three {
+    transform: rotate(180deg);
+}
+
+.next-button,
+.prev-button,
+.next-button-two,
+.prev-button-two,
+.next-button-three,
+.prev-button-three {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-right: 5rem;
+}
+
+.next-button img,
+.prev-button img,
+.next-button-two img,
+.prev-button-two img,
+.next-button-three img,
+.prev-button-three img {
+    width: 30px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.next-button img:hover,
+.prev-button img:hover,
+.next-button-two img:hover,
+.prev-button-two img:hover,
+.next-button-three img:hover,
+.prev-button-three img:hover {
+    opacity: 1;
+}
+
+
+
+/* ------------------Footer----------------- */
+
+
+footer {
+    width: 100%;
+    height: 13rem;
+    background-color: #2D3147;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+footer h4 {
+    color: #F3F3F3;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F3F3F3;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+
+}
+
+.socials,
+.other-links,
+.contacts {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    color: #F3F3F3;
+    margin-top: rem;
+}
+
+.credits a {
+    font-size: 12px;
+}

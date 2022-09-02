@@ -229,7 +229,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 5rem;
     z-index: 1;
 }
 
