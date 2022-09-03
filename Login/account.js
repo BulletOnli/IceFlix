@@ -25,10 +25,12 @@ let password = document.getElementById('password')
 let error = document.querySelector('.error')
 let loginBtn = document.getElementById('login-btn')
 
+let message = "Wrong Email or Password!";
+
 loginBtn.addEventListener('click', function() {
-    if (email.value === "admin@gmail.com" & password.value === "admin") {
-        window.location.pathname= "/movies/movie.html";
+    if (email.value == "admin@gmail.com" && password.value == "admin") {
+        window.location.pathname = 'movies/movie.html'
     } else {
-        error.textContent = "Wrong Email or Password!"
+        error.innerHTML = message
     }
 })
