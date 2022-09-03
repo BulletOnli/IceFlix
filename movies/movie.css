@@ -96,7 +96,7 @@ main {
     flex-direction: column;
 }
 
-main p {
+main .genre {
     font-size: 1.8rem;
     font-weight: 800;
     color: #F3F3F3;
@@ -108,7 +108,6 @@ main p {
 .video-section {
     display: flex;
     align-items: center;
-
 }
 
 .swiper {
@@ -128,7 +127,6 @@ main p {
 .swiper-slide a {
     height: 100%;
     width: 100%;
-    position: relative;
 }
 
 .swiper-slide img {
@@ -137,14 +135,21 @@ main p {
     border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;
-    position: absolute;
 }
 
 .swiper-slide .title {
     position: absolute;
-    font-size: 12px;
+    margin-bottom: 1px;
+    padding-bottom: 2px;
     bottom: 0;
-    background-color: lavender;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .prev-button,
