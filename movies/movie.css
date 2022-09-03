@@ -117,23 +117,10 @@ main p {
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
     background: #fff;
     border-radius: 20px;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
     user-select: none;
 }
@@ -141,18 +128,23 @@ main p {
 .swiper-slide a {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .swiper-slide img {
-    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;
     position: absolute;
+}
+
+.swiper-slide .title {
+    position: absolute;
+    font-size: 12px;
+    bottom: 0;
+    background-color: lavender;
 }
 
 .prev-button,
