@@ -7,6 +7,7 @@
     <title>IceFlix</title>
 
     <link rel="stylesheet" href="account.css">
+    <script src="account.js" defer></script>
 </head>
 <body>
     <nav>
@@ -22,13 +23,13 @@
         <!--------Log in ------->
         <div class="login-container">
             <p class="login">Log In</p>
-            <form action="">
+            <form>
                 <input type="email" id="email" placeholder="Email or phone number">
                 <input type="password" id="password" placeholder="Password">
                     <div class="error-container">
-                        <p class="error"></p>
+                        <p class="error" id="error-text"></p>
                     </div>
-                    <button id="login-btn"><a href="#">Log In</a></button>
+                    <button id="login-btn">Log In</button>
             </form>
             <div class="forgot-link">
                 <a href="#">Forgot password?</a>
@@ -41,14 +42,14 @@
         <!--------Sign up------->
         <div class="signup-container active-signup">
             <p class="signup">Sign up</p>
-            <form action="">
+            <form>
                 <input type="text" placeholder="Username">
                 <input type="email" placeholder="Email or phone number">
                 <input type="password" placeholder="Password">
-                <button><a href="#">Create account</a></button>
+                <button type="submit" id="create-btn">Create account</button>
             </form>
             <div class="accountready">
-                <p>Already have account? <a href="#" id="login">Log in</a> </p>
+                <p>Already have account? <a href="#" id="login">Log in</a></p>
             </div>
         </div>
     </header>
@@ -76,6 +77,7 @@
             <a href="">Powered by Gemmuel Dela Pena</a>
         </div>
     </footer>
-    <script src="account.js"></script>
+
+    
 </body>
 </html>

@@ -3,7 +3,7 @@
 const createAccount = document.getElementById('signUp')
 const loginContainer = document.querySelector('.login-container')
 
-createAccount.addEventListener('click', function() {
+createAccount.addEventListener('click', () => {
     loginContainer.style.display = "none"
     signupContainer.style.display = "flex"
 })
@@ -12,25 +12,32 @@ createAccount.addEventListener('click', function() {
 const loginAccount = document.getElementById('login')
 const signupContainer = document.querySelector('.signup-container')
 
-loginAccount.addEventListener('click', function() {
+loginAccount.addEventListener('click', () => {
     signupContainer.style.display = "none"
     loginContainer.style.display = "flex"
 })
 
 
 // Login
-
-let email = document.getElementById('email')
-let password = document.getElementById('password')
-let error = document.querySelector('.error')
+let email = document.getElementById("email")
+let password = document.getElementById("password")
+let error = document.getElementById('error-text')
 let loginBtn = document.getElementById('login-btn')
 
-let message = "Wrong Email or Password!";
-
-loginBtn.addEventListener('click', function() {
+loginBtn.addEventListener('click', () => {
     if (email.value == "admin@gmail.com" && password.value == "admin") {
-        window.location.pathname = 'movies/movie.html'
+        document.location.href = "../index.html" // movies/movie.html
+        console.log("true")
     } else {
-        error.innerHTML = message
+        error.textContent = "Invalid Email or Password!"
+        console.log("false")
     }
+})
+
+
+// create
+let createBtn = document.getElementById('create-btn')
+
+createBtn.addEventListener("click", () => {
+    console.log("sfsf")
 })
