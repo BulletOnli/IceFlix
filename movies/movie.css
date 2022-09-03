@@ -85,6 +85,13 @@ nav input::placeholder {
     color: #0f1c32;
 }
 
+.toggleBox {
+    font-size: 23px;
+    text-align: center;
+    margin-right: 50px;
+    display: none;
+}
+
 
 /* ------------------Main----------------- */
 
@@ -190,10 +197,7 @@ main .genre {
     opacity: 1;
 }
 
-
-
 /* ------------------Footer----------------- */
-
 
 footer {
     width: 100%;
@@ -245,4 +249,128 @@ footer a:hover {
 
 .credits a {
     font-size: 12px;
+}
+
+@media (max-width: 1100px) {
+    nav input {
+        margin: 0 2rem;
+    }
+    .nav-links {
+        position: absolute;
+        top: 50px;
+        right: -100%;
+        margin: 0;
+        width: 13rem;
+        height: 100vh;
+        display: block;
+        background-color: #2D3147;
+        z-index: 100;
+        transition: .4s;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .toggleBox {
+        color: #F3F3F3;
+        font-size: 25px;
+        text-align: center;
+        margin-right: 50px;
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        height: 60rem;
+    }
+    .next-button,
+    .prev-button,
+    .next-button-two,
+    .prev-button-two,
+    .next-button-three,
+    .prev-button-three {
+        padding: 0; 
+    }
+    .swiper {
+        width: 72rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        height: 52rem;
+    }
+    main .genre {
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .next-button,
+    .prev-button,
+    .next-button-two,
+    .prev-button-two,
+    .next-button-three,
+    .prev-button-three {
+        padding-right: 10px;
+    }
+    .next-button img,
+    .prev-button img,
+    .next-button-two img,
+    .prev-button-two img,
+    .next-button-three img,
+    .prev-button-three img {
+        width: 20px;
+    }
+    .swiper {
+        width: 75rem;
+        height: 9rem;
+    }
+
+    .logo p {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+
+    nav input {
+        margin: 0 2rem;
+    }
+    .nav-links {
+        position: absolute;
+        top: 50px;
+        right: -100%;
+        margin: 0;
+        width: 13rem;
+        height: 100vh;
+        display: block;
+        background-color: #2D3147;
+        z-index: 100;
+        transition: .4s;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .toggleBox {
+        color: #F3F3F3;
+        font-size: 25px;
+        text-align: center;
+        margin-right: 50px;
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    nav input {
+        width: 5rem;
+    }
 }

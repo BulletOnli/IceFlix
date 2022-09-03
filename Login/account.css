@@ -337,3 +337,22 @@ footer a:hover {
 .credits a {
     font-size: 12px;
 }
+
+
+@media (max-width: 450px) {
+    .login-container,
+    .signup-container {
+        width: 20rem;
+        height: 25rem;
+    }
+    form input {
+        font-size: 14px;
+        width: 18rem;
+        padding: 15px 20px;
+        margin: 10px 0;
+    }
+    form button {
+        width: 18rem;
+        padding: 15px 20px;
+    }
+}

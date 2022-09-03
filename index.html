@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IceFlix</title>
     
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <script src="https://kit.fontawesome.com/effd3867de.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <div class="logo">
             <p>IceFlix</p>
         </div>
-        <div class="toggle"></div>
         <input type="search" placeholder="Search">
         <ul class="nav-links">
             <li><a href="#">Genre</a></li>
             <li><a href="#main">About</a></li>
             <li><a href="Login/account.html"><button>Log in</button></a></li>
         </ul>
+        <span class="toggleBox"><i class="fa-solid fa-bars" id="toggle-bar"></i></span>
     </nav>
     <header>
         <div class="left-section">
@@ -93,5 +97,15 @@
             <a href="">Powered by Gemmuel Dela Pena</a>
         </div>
     </footer>
+
+    <script>
+        const toggleClick = document.querySelector(".toggleBox")
+        const navBar = document.querySelector(".nav-links")
+
+        toggleClick.addEventListener('click', function() {
+            toggleClick.classList.toggle('active')
+            navBar.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>

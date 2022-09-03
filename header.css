@@ -1,0 +1,114 @@
+/* ------------------Nav----------------- */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #2D3147;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+
+.logo p {
+    color: #F3F3F3;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 4rem;
+    padding: 5px 0;
+}
+
+.logo p a {
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+nav input {
+    background-color: #F3F3F3;
+    width: 25rem;
+    height: 2rem;
+    padding: 0 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 17rem;
+}
+
+nav input::placeholder {
+    text-align: center;
+}
+
+.toggleBox {
+    font-size: 23px;
+    text-align: center;
+    margin-right: 50px;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.nav-links li {
+    margin: 0 3rem;
+    position: relative;
+}
+
+.nav-links li a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+.nav-links li button {
+    padding: 2px 15px;
+    color: #F3F3F3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: #2D3147;
+    border: 2px solid #F3F3F3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.nav-links li button:hover,
+.nav-links li button a:hover{
+    background-color: #F3F3F3;
+    color: #0f1c32;
+}
+
+@media (max-width: 1100px) {
+    nav input {
+        margin: 0 2rem;
+    }
+    .nav-links {
+        position: absolute;
+        top: 50px;
+        right: -100%;
+        margin: 0;
+        width: 13rem;
+        height: 100vh;
+        display: block;
+        background-color: #2D3147;
+        z-index: 100;
+        transition: .4s;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .toggleBox {
+        color: #F3F3F3;
+        font-size: 25px;
+        text-align: center;
+        margin-right: 50px;
+        display: block;
+    }
+}

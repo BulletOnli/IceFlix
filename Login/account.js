@@ -26,11 +26,9 @@ let loginBtn = document.getElementById('login-btn')
 
 loginBtn.addEventListener('click', () => {
     if (email.value == "admin@gmail.com" && password.value == "admin") {
-        document.location.href = "../index.html" // movies/movie.html
-        console.log("true")
+        document.location.href = "../movies/movie.html"
     } else {
         error.textContent = "Invalid Email or Password!"
-        console.log("false")
     }
 })
 
