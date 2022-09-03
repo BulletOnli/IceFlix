@@ -48,4 +48,3 @@ var swiper = new Swiper(".mySwiper-three", {
     prevEl: ".prev-button-three",
     },
 });
-

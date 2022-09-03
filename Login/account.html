@@ -23,9 +23,12 @@
         <div class="login-container">
             <p class="login">Log In</p>
             <form action="">
-                <input type="email" placeholder="Email or phone number">
-                <input type="password" placeholder="Password">
-                <button><a href="#">Log In</a></button>
+                <input type="email" id="email" placeholder="Email or phone number">
+                <input type="password" id="password" placeholder="Password">
+                    <div class="error-container">
+                        <p class="error"></p>
+                    </div>
+                <button id="login-btn"><a href="#">Log In</a></button>
             </form>
             <div class="forgot-link">
                 <a href="#">Forgot password?</a>

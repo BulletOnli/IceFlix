@@ -16,3 +16,19 @@ loginAccount.addEventListener('click', function() {
     signupContainer.style.display = "none"
     loginContainer.style.display = "flex"
 })
+
+
+// Login
+
+let email = document.getElementById('email')
+let password = document.getElementById('password')
+let error = document.querySelector('.error')
+let loginBtn = document.getElementById('login-btn')
+
+loginBtn.addEventListener('click', function() {
+    if (email.value === "admin@gmail.com" & password.value === "admin") {
+        window.location.pathname= "/movies/movie.html";
+    } else {
+        error.textContent = "Wrong Email or Password!"
+    }
+})
