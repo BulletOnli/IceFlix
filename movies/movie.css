@@ -279,7 +279,7 @@ footer a:hover {
         color: #F3F3F3;
         font-size: 25px;
         text-align: center;
-        margin-right: 50px;
+        margin-right: 25px;
         display: block;
     }
 }
@@ -299,6 +299,10 @@ footer a:hover {
     .swiper {
         width: 72rem;
         height: 10rem;
+    }
+    .logo p {
+        font-size: 1.8rem;
+        margin-left: 1rem;
     }
 }
 
@@ -331,46 +335,13 @@ footer a:hover {
         width: 75rem;
         height: 9rem;
     }
-
-    .logo p {
-        font-size: 1.8rem;
-        margin-left: 1rem;
-    }
-
     nav input {
-        margin: 0 2rem;
-    }
-    .nav-links {
-        position: absolute;
-        top: 50px;
-        right: -100%;
-        margin: 0;
-        width: 13rem;
-        height: 100vh;
-        display: block;
-        background-color: #2D3147;
-        z-index: 100;
-        transition: .4s;
-    }
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links li {
-        margin-top: 30px;
-        text-align: center;
-    }
-    .toggleBox {
-        color: #F3F3F3;
-        font-size: 25px;
-        text-align: center;
-        margin-right: 50px;
-        display: block;
+        margin: 0 1rem;
     }
 }
 
 @media (max-width: 400px) {
     nav input {
-        width: 5rem;
+        width: 8rem;
     }
 }

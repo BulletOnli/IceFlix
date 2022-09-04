@@ -108,7 +108,20 @@ nav input::placeholder {
         color: #F3F3F3;
         font-size: 25px;
         text-align: center;
-        margin-right: 50px;
+        margin-right: 25px;
         display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    .logo p {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    nav input {
+        margin: 0 1rem;
+        width: 10rem;
     }
 }
